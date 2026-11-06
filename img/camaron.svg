@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Camarón pelado fresco">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdeee8"/><stop offset="1" stop-color="#f6d6c9"/>
+    </linearGradient>
+    <linearGradient id="sh" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6a886"/><stop offset="1" stop-color="#ef7f5b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="216" r="182" fill="#ffffff" opacity=".45"/>
+  <ellipse cx="300" cy="372" rx="180" ry="22" fill="#0b2b3a" opacity=".09"/>
+
+  <!-- cola -->
+  <g fill="#ef8f6e">
+    <path d="M356 330l72-34-12 38z"/>
+    <path d="M356 334l74 2-22 34z"/>
+    <path d="M354 338l52 46-36 6z"/>
+  </g>
+
+  <!-- cuerpo -->
+  <path d="M358 330C252 352 170 292 168 212 166 132 236 86 306 96"
+        fill="none" stroke="url(#sh)" stroke-width="60" stroke-linecap="round"/>
+
+  <!-- segmentos -->
+  <g stroke="#d96a4c" stroke-width="4" fill="none" opacity=".45" stroke-linecap="round">
+    <path d="M300 306v50"/>
+    <path d="M244 300l-16 44"/>
+    <path d="M196 268l-30 30"/>
+    <path d="M176 216h-40"/>
+    <path d="M188 164l-32-20"/>
+    <path d="M232 118l-14-32"/>
+    <path d="M286 98h30"/>
+  </g>
+
+  <!-- brillo superior -->
+  <path d="M300 106c-46 4-88 36-98 82" stroke="#ffffff" stroke-width="12" fill="none" opacity=".38" stroke-linecap="round"/>
+
+  <!-- cabeza -->
+  <ellipse cx="300" cy="96" rx="34" ry="26" fill="#f08a63" transform="rotate(-18 300 96)"/>
+  <circle cx="288" cy="94" r="8" fill="#3a1a12"/>
+  <circle cx="285" cy="91" r="2.8" fill="#ffffff"/>
+
+  <!-- antenas -->
+  <g stroke="#e88a68" stroke-width="3.4" fill="none" stroke-linecap="round">
+    <path d="M322 82c34-16 76-16 104 2"/>
+    <path d="M320 96c34 0 68 12 90 34"/>
+  </g>
+</svg>

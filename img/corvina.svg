@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Filete de corvina fresco">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f6f5"/><stop offset="1" stop-color="#d5e2e0"/>
+    </linearGradient>
+    <linearGradient id="fillets" x1="0" y1="0" x2=".2" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".55" stop-color="#f7f8f5"/>
+      <stop offset="1" stop-color="#e6ebe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="214" r="184" fill="#ffffff" opacity=".50"/>
+  <ellipse cx="300" cy="334" rx="190" ry="20" fill="#0b2b3a" opacity=".08"/>
+
+  <path d="M146 258C164 206 226 176 306 172c80-4 148 22 184 60 4 8 4 18 0 26-36 38-104 64-184 62-80-2-142-16-160-62z"
+        fill="url(#fillets)" stroke="#c6d2cf" stroke-width="2.5"/>
+
+  <path d="M156 268c22 32 80 44 154 44 74 0 136-16 164-46" stroke="#7f959c" stroke-width="9" fill="none" stroke-linecap="round" opacity=".8"/>
+
+  <g stroke="#d6e0dd" stroke-width="5" fill="none" opacity=".95" stroke-linecap="round">
+    <path d="M206 202c-6 26-6 52 0 78"/>
+    <path d="M248 190c-7 30-7 62 0 92"/>
+    <path d="M292 184c-7 34-7 70 0 104"/>
+    <path d="M336 186c-6 32-6 66 0 98"/>
+    <path d="M380 194c-5 28-5 58 0 86"/>
+    <path d="M420 208c-4 24-4 50 0 74"/>
+  </g>
+
+  <path d="M206 194c30-16 74-24 116-22" stroke="#ffffff" stroke-width="11" fill="none" opacity=".9" stroke-linecap="round"/>
+  <path d="M198 218c28-12 62-18 94-18" stroke="#ffffff" stroke-width="7" fill="none" opacity=".65" stroke-linecap="round"/>
+</svg>

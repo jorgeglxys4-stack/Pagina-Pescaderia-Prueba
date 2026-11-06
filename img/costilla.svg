@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Costilla de res fresca">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8ede7"/><stop offset="1" stop-color="#ecd6cb"/>
+    </linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a63c31"/><stop offset=".55" stop-color="#8d2f26"/><stop offset="1" stop-color="#71241d"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="216" r="184" fill="#ffffff" opacity=".45"/>
+  <ellipse cx="300" cy="366" rx="196" ry="24" fill="#0b2b3a" opacity=".10"/>
+
+  <g transform="translate(292 232) rotate(-5)">
+    <!-- pieza -->
+    <rect x="-168" y="-96" width="336" height="192" rx="26" fill="url(#meat)" stroke="#5f1d17" stroke-width="3"/>
+
+    <!-- grasa superior -->
+    <path d="M-168 -70c40-16 96-24 156-22s122 12 180 30l-8 20c-60-16-120-24-178-24s-112 6-150 20z"
+          fill="#e8c9b6" opacity=".65"/>
+
+    <!-- vetas -->
+    <g stroke="#b8594a" stroke-width="4" fill="none" opacity=".45" stroke-linecap="round">
+      <path d="M-120 -34c62-10 140-8 210 6"/>
+      <path d="M-128 34c66-8 148-6 220 8"/>
+    </g>
+
+    <!-- huesos -->
+    <g fill="#f6ead9" stroke="#d8c1a6" stroke-width="3">
+      <ellipse cx="-166" cy="-66" rx="20" ry="24"/>
+      <ellipse cx="-166" cy="-8"  rx="20" ry="24"/>
+      <ellipse cx="-166" cy="50"  rx="20" ry="24"/>
+      <ellipse cx="166"  cy="-66" rx="20" ry="24"/>
+      <ellipse cx="166"  cy="-8"  rx="20" ry="24"/>
+      <ellipse cx="166"  cy="50"  rx="20" ry="24"/>
+    </g>
+    <g fill="#e7d3ba" opacity=".8">
+      <ellipse cx="-166" cy="-66" rx="9" ry="11"/>
+      <ellipse cx="-166" cy="-8"  rx="9" ry="11"/>
+      <ellipse cx="-166" cy="50"  rx="9" ry="11"/>
+      <ellipse cx="166"  cy="-66" rx="9" ry="11"/>
+      <ellipse cx="166"  cy="-8"  rx="9" ry="11"/>
+      <ellipse cx="166"  cy="50"  rx="9" ry="11"/>
+    </g>
+
+    <!-- brillo -->
+    <path d="M-120 -52c50-14 118-16 172-6" stroke="#ffffff" stroke-width="8" fill="none" opacity=".18" stroke-linecap="round"/>
+  </g>
+</svg>

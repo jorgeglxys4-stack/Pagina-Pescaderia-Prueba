@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Tilapia fresca">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf3f0"/><stop offset="1" stop-color="#c9dcd6"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f8a95"/>
+      <stop offset=".42" stop-color="#a4b9c0"/>
+      <stop offset="1" stop-color="#eaf1f2"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="214" r="186" fill="#ffffff" opacity=".40"/>
+  <ellipse cx="300" cy="372" rx="196" ry="22" fill="#0b2b3a" opacity=".10"/>
+
+  <path d="M446 230C478 198 506 180 536 170c-14 34-14 86 0 120-30-10-58-28-90-60z" fill="#7f9aa5"/>
+  <path d="M212 156 300 92 392 144z" fill="#7f9aa5"/>
+  <path d="M248 306 318 352 376 300z" fill="#93aeb7"/>
+
+  <path d="M118 232c2-64 84-104 182-102 98 2 172 46 178 102-6 56-80 100-178 102-98 2-180-38-182-102z"
+        fill="url(#body)" stroke="#6e8892" stroke-width="3"/>
+
+  <g stroke="#54707c" stroke-width="13" fill="none" opacity=".20" stroke-linecap="round">
+    <path d="M226 140c-12 60-12 122 0 182"/>
+    <path d="M274 130c-12 68-12 138 0 206"/>
+    <path d="M324 128c-11 70-11 144 0 212"/>
+    <path d="M374 134c-9 66-9 134 0 198"/>
+    <path d="M418 150c-7 58-7 120 0 176"/>
+  </g>
+
+  <path d="M246 268c14 30 44 46 76 42-28-8-56-22-76-42z" fill="#9db4bd" opacity=".9"/>
+
+  <path d="M204 180c-18 32-18 76 0 106" stroke="#54707c" stroke-width="5" fill="none" opacity=".45"/>
+  <path d="M126 238c12 7 26 9 40 7" stroke="#54707c" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <circle cx="184" cy="210" r="17" fill="#ffffff"/>
+  <circle cx="186" cy="210" r="9" fill="#0f2630"/>
+  <circle cx="190" cy="206" r="3.4" fill="#ffffff"/>
+
+  <path d="M232 196c26-14 60-20 92-16" stroke="#ffffff" stroke-width="9" fill="none" opacity=".38" stroke-linecap="round"/>
+</svg>

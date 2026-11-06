@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Mojarra entera fresca">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f0e4"/><stop offset="1" stop-color="#dfd5c0"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7f9297"/>
+      <stop offset=".5" stop-color="#bccacc"/>
+      <stop offset="1" stop-color="#f1f4f3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="214" r="184" fill="#ffffff" opacity=".45"/>
+  <ellipse cx="300" cy="374" rx="192" ry="22" fill="#0b2b3a" opacity=".10"/>
+
+  <path d="M448 224C480 192 508 176 538 166c-14 34-14 90 0 124-30-10-58-30-90-66z" fill="#d9b25c"/>
+  <path d="M186 140 210 96 238 130 266 90 294 126 324 90 350 128 380 102 402 148z" fill="#d9b25c"/>
+  <path d="M236 316 264 356 292 322 320 354 344 312z" fill="#e0bd6d"/>
+
+  <path d="M122 228c2-72 84-116 180-116 96 0 174 46 178 114-4 68-82 112-178 114-98 2-178-40-180-112z"
+        fill="url(#body)" stroke="#7c9095" stroke-width="3"/>
+
+  <ellipse cx="392" cy="198" rx="16" ry="22" fill="#1e2b31" opacity=".82" transform="rotate(9 392 198)"/>
+
+  <g stroke="#6b8189" stroke-width="11" fill="none" opacity=".18" stroke-linecap="round">
+    <path d="M216 150c-10 56-10 110 0 166"/>
+    <path d="M268 138c-10 64-10 128 0 192"/>
+    <path d="M320 134c-9 66-9 134 0 200"/>
+    <path d="M370 142c-7 60-7 124 0 184"/>
+  </g>
+
+  <path d="M244 266c16 28 46 42 78 38-28-8-58-22-78-38z" fill="#e6c47a" opacity=".95"/>
+
+  <path d="M196 186c-16 28-16 68 0 96" stroke="#6b8189" stroke-width="5" fill="none" opacity=".45"/>
+  <path d="M126 232c12 7 24 9 38 7" stroke="#6b8189" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <circle cx="176" cy="202" r="18" fill="#ffffff"/>
+  <circle cx="178" cy="202" r="10" fill="#14242b"/>
+  <circle cx="182" cy="198" r="3.6" fill="#ffffff"/>
+
+  <path d="M228 188c26-14 58-20 88-16" stroke="#ffffff" stroke-width="9" fill="none" opacity=".40" stroke-linecap="round"/>
+</svg>

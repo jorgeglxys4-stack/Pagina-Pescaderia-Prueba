@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Lomo de cerdo fresco">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf3ef"/><stop offset="1" stop-color="#f2dad1"/>
+    </linearGradient>
+    <linearGradient id="meat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4b6a5"/><stop offset=".55" stop-color="#e89a86"/><stop offset="1" stop-color="#d2856e"/>
+    </linearGradient>
+    <clipPath id="clipCuerpo">
+      <rect x="-182" y="-62" width="336" height="126" rx="54"/>
+    </clipPath>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="214" r="184" fill="#ffffff" opacity=".45"/>
+  <ellipse cx="300" cy="356" rx="200" ry="24" fill="#0b2b3a" opacity=".10"/>
+
+  <g transform="translate(296 232) rotate(-4)">
+    <rect x="-182" y="-62" width="336" height="126" rx="54" fill="url(#meat)"/>
+
+    <g clip-path="url(#clipCuerpo)">
+      <rect x="-182" y="-62" width="336" height="30" fill="#fdeade"/>
+      <path d="M-190 -34c32 14 66 16 100 12s70-10 102-8 64 10 96 2" stroke="#f7dbc9" stroke-width="4" fill="none"/>
+      <g stroke="#c8826d" stroke-width="4" fill="none" opacity=".30" stroke-linecap="round">
+        <path d="M-182 26c58-16 138-16 208 0"/>
+        <path d="M-182 50c64-14 150-12 224 6"/>
+      </g>
+      <path d="M-120 -4c40-10 88-12 132-8" stroke="#ffffff" stroke-width="8" fill="none" opacity=".35" stroke-linecap="round"/>
+    </g>
+
+    <ellipse cx="150" cy="0" rx="34" ry="62" fill="#e9a08c"/>
+    <ellipse cx="150" cy="0" rx="25" ry="47" fill="#f9cdbd"/>
+    <ellipse cx="150" cy="0" rx="11" ry="21" fill="#f2b3a0"/>
+
+    <g stroke="#e9d3c0" stroke-width="4" stroke-linecap="round">
+      <path d="M-86 -62v124"/><path d="M4 -62v126"/><path d="M94 -62v124"/>
+    </g>
+    <g fill="#dcc3ad">
+      <circle cx="-86" cy="-54" r="4.2"/><circle cx="4" cy="-56" r="4.2"/><circle cx="94" cy="-54" r="4.2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pescadería y Carnes La Perla — Pescado fresco a domicilio en Barranquilla</title>
+<meta name="description" content="Bagre, tilapia, mojarra, salmón, camarón y carnes frescas con domicilio en Barranquilla y área metropolitana. Arma tu pedido y envíalo por WhatsApp en menos de un minuto.">
+<meta name="theme-color" content="#0b2b3a">
+<meta property="og:title" content="Pescadería y Carnes La Perla — Barranquilla">
+<meta property="og:description" content="Pescado fresco del día y carnes seleccionadas. Domicilio en Barranquilla y área metropolitana.">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Iconos ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ico-wa" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.3-1.94 1.35-.5.05-.99.24-3.32-.7-2.8-1.13-4.56-3.98-4.7-4.16-.14-.19-1.1-1.48-1.1-2.82 0-1.34.7-2 .95-2.27.25-.27.54-.34.72-.34l.52.01c.17.01.39-.06.61.46.22.53.76 1.86.83 1.99.07.14.11.3.02.48-.09.19-.14.3-.28.46l-.42.49c-.14.14-.28.29-.12.57.16.28.71 1.18 1.53 1.91 1.05.94 1.94 1.24 2.22 1.38.28.14.44.12.6-.07.16-.19.69-.8.87-1.08.18-.28.36-.23.61-.14.25.09 1.58.75 1.85.89.27.14.45.21.52.32.07.12.07.68-.17 1.36Z"/>
+  </symbol>
+  <symbol id="ico-cart" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6.2"/>
+    <circle cx="10" cy="20" r="1.4" fill="currentColor"/>
+    <circle cx="18" cy="20" r="1.4" fill="currentColor"/>
+  </symbol>
+  <symbol id="ico-pin" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/>
+    <circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.7"/>
+  </symbol>
+</svg>
+
+<!-- ===== Barra superior ===== -->
+<div class="topbar">
+  <div class="wrap topbar__in">
+    <span class="topbar__dot" aria-hidden="true"></span>
+    <span id="topbar-msg">Pedidos hoy antes de las 2:00 p.m. · Domicilio en Barranquilla y área metropolitana</span>
+    <a class="topbar__tel" href="tel:+573239518926">
+      <svg class="ico" aria-hidden="true"><use href="#ico-wa"/></svg>
+      323 951 8926
+    </a>
+  </div>
+</div>
+
+<!-- ===== Encabezado ===== -->
+<header class="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#inicio" aria-label="Inicio">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#123d4f" stroke="rgba(255,255,255,.25)"/>
+        <path d="M11 25c5-7 15-9 21-4 2 1.6 3.4 3.6 4.2 5.6-.8 2-2.2 4-4.2 5.6-6 5-16 3-21-4Z" fill="#f6ecdc"/>
+        <path d="M36 26.6 43 22v10l-7-4.4Z" fill="#e2543a"/>
+        <circle cx="19.5" cy="23.5" r="1.9" fill="#0b2b3a"/>
+        <path d="M25 20.5c2.4 1.4 3.8 3.3 4.4 5.4" stroke="#0b2b3a" stroke-width="1.5" fill="none" opacity=".55" stroke-linecap="round"/>
+      </svg>
+      <span class="brand__txt">
+        <strong>La Perla</strong>
+        <small>Pescadería y Carnes · Barranquilla</small>
+      </span>
+    </a>
+
+    <nav class="header__nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como">Cómo pedir</a>
+      <a href="#zonas">Domicilios</a>
+    </nav>
+
+    <button class="btn btn--cart" id="btn-cart" aria-controls="cart" aria-expanded="false">
+      <svg class="ico" aria-hidden="true"><use href="#ico-cart"/></svg>
+      <span class="btn--cart__txt">Mi pedido</span>
+      <b class="pill" id="cart-count">0</b>
+    </button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="wrap hero__in">
+      <div class="hero__copy">
+        <p class="eyebrow">Fresco del día · <span id="fecha-hoy"></span></p>
+        <h1>Pescado y carne frescos,<br><em>sin salir de casa.</em></h1>
+        <p class="lede">Elige lo que necesitas, ajusta las libras y envía tu pedido por WhatsApp. Te confirmamos en minutos y lo llevamos hasta tu puerta.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#catalogo">Ver el catálogo</a>
+          <button class="btn btn--ghost btn--lg" id="btn-wa-directo" type="button">
+            <svg class="ico" aria-hidden="true"><use href="#ico-wa"/></svg>
+            Pedir por WhatsApp
+          </button>
+        </div>
+        <ul class="trust">
+          <li>🐟 Fresco del día</li>
+          <li>🧊 Cadena de frío</li>
+          <li>💵 Pago contraentrega</li>
+        </ul>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="hero__card hero__card--2"><img src="img/camaron.svg" alt=""></div>
+        <div class="hero__card hero__card--1"><img src="img/salmon.svg" alt=""></div>
+        <div class="hero__tag"><span class="hero__tag-dot"></span> Hoy: bagre, mojarra y tilapia</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Catálogo ===== -->
+  <section class="catalog" id="catalogo">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">El catálogo de hoy</h2>
+          <p class="section-sub">Precios por libra (500 g). También te mostramos el equivalente por kilo.</p>
+        </div>
+        <div class="filters">
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input id="buscar" type="search" placeholder="Buscar bagre, salmón, lomo…" autocomplete="off">
+          </label>
+          <div class="chips" id="chips" role="tablist" aria-label="Categorías"></div>
+        </div>
+      </div>
+
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>No encontramos ese producto hoy. Escríbenos por WhatsApp y lo buscamos para ti.</p>
+    </div>
+  </section>
+
+  <!-- ===== Cómo pedir ===== -->
+  <section class="how" id="como">
+    <div class="wrap">
+      <h2 class="section-title">Pedir es así de fácil</h2>
+      <div class="steps">
+        <article class="step">
+          <span class="step__n">1</span>
+          <h3>Elige y ajusta</h3>
+          <p>Escoge el producto, la presentación y las libras que necesitas. El precio se calcula solo.</p>
+        </article>
+        <article class="step">
+          <span class="step__n">2</span>
+          <h3>Envía por WhatsApp</h3>
+          <p>Tu pedido llega escrito a nuestro WhatsApp, con productos, dirección y total. Solo pulsas enviar.</p>
+        </article>
+        <article class="step">
+          <span class="step__n">3</span>
+          <h3>Recibes fresco</h3>
+          <p>Confirmamos disponibilidad y hora. Pagas contraentrega en efectivo, Nequi o Daviplata.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Zonas ===== -->
+  <section class="zones" id="zonas">
+    <div class="wrap zones__in">
+      <div class="zones__copy">
+        <h2 class="section-title">Dónde entregamos</h2>
+        <p class="section-sub">Domicilio en Barranquilla y área metropolitana. Pedido mínimo <strong id="txt-minimo">$40.000</strong>.</p>
+        <p class="zones__note">
+          <svg class="ico ico--ink" aria-hidden="true"><use href="#ico-pin"/></svg>
+          <span id="txt-envio-gratis"></span>
+        </p>
+        <a class="btn btn--primary" href="#catalogo">Empezar mi pedido</a>
+      </div>
+      <div class="zones__table" id="zonas-tabla"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Pie ===== -->
+<footer class="footer">
+  <div class="wrap footer__in">
+    <div class="footer__brand">
+      <strong>Pescadería y Carnes La Perla</strong>
+      <p>Pescado fresco del día y carnes seleccionadas.<br>Barranquilla, Atlántico · Colombia</p>
+      <a class="footer__wa" href="https://wa.me/573239518926" target="_blank" rel="noopener">
+        <svg class="ico" aria-hidden="true"><use href="#ico-wa"/></svg> 323 951 8926
+      </a>
+    </div>
+    <div class="footer__col">
+      <h4>Pedidos</h4>
+      <p>Lunes a sábado<br>7:00 a.m. – 6:00 p.m.<br>Domingos: 7:00 a.m. – 12:00 m.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Pagos</h4>
+      <p>Contraentrega en efectivo<br>Nequi · Daviplata<br>Transferencia Bancolombia</p>
+    </div>
+    <div class="footer__col">
+      <h4>Información</h4>
+      <p><a href="#">Política de privacidad</a><br><a href="#">Términos y condiciones</a><br><a href="#">Tratamiento de datos</a></p>
+    </div>
+  </div>
+  <div class="wrap footer__base">
+    <span>© <span id="year"></span> Pescadería y Carnes La Perla. Todos los derechos reservados.</span>
+    <span>Producto perecedero: recibe y refrigera de inmediato.</span>
+  </div>
+</footer>
+
+<!-- ===== Carrito ===== -->
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="cart" id="cart" aria-label="Tu pedido" aria-hidden="true" tabindex="-1">
+  <div class="cart__head">
+    <div>
+      <h2>Tu pedido</h2>
+      <p class="cart__sub" id="cart-sub">Aún no has agregado nada</p>
+    </div>
+    <button class="icon-btn" id="btn-close-cart" aria-label="Cerrar pedido">
+      <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+        <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="cart__body" id="cart-body">
+    <div id="cart-items" class="cart__items"></div>
+
+    <form class="form" id="form-pedido" autocomplete="on" novalidate>
+      <h3 class="form__title">Datos de entrega</h3>
+      <div class="form__grid">
+        <label class="fld">
+          <span>Nombre <b>*</b></span>
+          <input id="f-nombre" type="text" placeholder="Tu nombre" required>
+        </label>
+        <label class="fld">
+          <span>Teléfono</span>
+          <input id="f-tel" type="tel" inputmode="tel" placeholder="300 000 0000">
+        </label>
+        <label class="fld fld--full">
+          <span>Dirección <b>*</b></span>
+          <input id="f-dir" type="text" placeholder="Cra 53 # 79-20, apto 302" required>
+        </label>
+        <label class="fld">
+          <span>Zona <b>*</b></span>
+          <select id="f-zona" required></select>
+        </label>
+        <label class="fld">
+          <span>Franja de entrega</span>
+          <select id="f-franja"></select>
+        </label>
+        <label class="fld fld--full">
+          <span>Notas para el pedido</span>
+          <textarea id="f-notas" rows="2" placeholder="Ej: sin cabeza, empacado al vacío, llamar al llegar…"></textarea>
+        </label>
+      </div>
+    </form>
+
+    <div class="sum">
+      <div class="sum__row"><span>Subtotal</span><b id="sum-sub">$0</b></div>
+      <div class="sum__row"><span>Domicilio</span><b id="sum-env">—</b></div>
+      <div class="sum__row sum__row--total"><span>Total estimado</span><b id="sum-total">$0</b></div>
+    </div>
+
+    <p class="hint" id="cart-hint"></p>
+
+    <details class="preview">
+      <summary>Ver el mensaje que se enviará</summary>
+      <pre id="msg-preview">Agrega productos para ver tu pedido.</pre>
+    </details>
+  </div>
+
+  <div class="cart__foot">
+    <button class="btn btn--wa btn--block btn--lg" id="btn-enviar" type="button">
+      <svg class="ico" aria-hidden="true"><use href="#ico-wa"/></svg>
+      Enviar pedido por WhatsApp
+    </button>
+    <p class="micro">Se abre WhatsApp con el pedido ya escrito. Solo debes pulsar <strong>enviar</strong>.</p>
+  </div>
+</aside>
+
+<button class="fab" id="fab" aria-controls="cart" aria-expanded="false">
+  <span class="fab__ico"><svg class="ico" aria-hidden="true"><use href="#ico-cart"/></svg></span>
+  <span class="fab__txt">Ver pedido</span>
+  <span class="fab__count" id="fab-count">0</span>
+  <span class="fab__total" id="fab-total">$0</span>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

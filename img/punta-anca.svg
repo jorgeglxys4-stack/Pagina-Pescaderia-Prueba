@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Punta de anca de res">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4ece6"/><stop offset="1" stop-color="#e2d2c7"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c99b6d"/><stop offset=".5" stop-color="#b98a5f"/><stop offset="1" stop-color="#a97b52"/>
+    </linearGradient>
+    <linearGradient id="beef" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#a8392f"/><stop offset=".6" stop-color="#8d2a24"/><stop offset="1" stop-color="#6f1f1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="212" r="184" fill="#ffffff" opacity=".40"/>
+
+  <!-- tabla -->
+  <rect x="86" y="150" width="428" height="214" rx="26" fill="url(#wood)"/>
+  <g stroke="#a97b52" stroke-width="3" opacity=".5" fill="none">
+    <path d="M104 196c90-10 200-10 392 2"/>
+    <path d="M104 246c110-8 220-8 392 4"/>
+    <path d="M104 306c96-10 210-10 392 0"/>
+  </g>
+  <rect x="86" y="150" width="428" height="214" rx="26" fill="none" stroke="#96693f" stroke-width="4"/>
+
+  <!-- carne -->
+  <path d="M180 300c-26-48-18-104 22-136 44-36 124-38 184-8 60 30 72 96 40 138-28 36-118 52-176 42-38-6-58-18-70-36z"
+        fill="url(#beef)" stroke="#5e1915" stroke-width="3"/>
+
+  <!-- marmoleo -->
+  <g stroke="#e9c7b6" fill="none" opacity=".5" stroke-linecap="round">
+    <path d="M214 286c30-44 82-70 140-76" stroke-width="6"/>
+    <path d="M238 300c34-46 90-72 152-74" stroke-width="4"/>
+    <path d="M206 250c36-30 84-46 132-50" stroke-width="4"/>
+    <path d="M330 240c22 6 40 18 52 34" stroke-width="5"/>
+  </g>
+
+  <!-- brillo -->
+  <path d="M232 196c40-24 96-30 140-18" stroke="#ffffff" stroke-width="10" fill="none" opacity=".2" stroke-linecap="round"/>
+</svg>

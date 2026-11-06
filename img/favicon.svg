@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="La Perla">
+  <rect width="64" height="64" rx="14" fill="#0b2b3a"/>
+  <path d="M13 33c7-10 20-13 28-6 3 2.4 4.8 5.2 5.8 8-1 2.8-2.8 5.6-5.8 8-8 7-21 4-28-6z" fill="#f6ecdc"/>
+  <path d="M47 35l10-7v14z" fill="#e2543a"/>
+  <circle cx="24" cy="30" r="2.6" fill="#0b2b3a"/>
+</svg>

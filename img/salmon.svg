@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Salmón fresco en postas">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdf1ea"/><stop offset="1" stop-color="#f3d9cc"/>
+    </linearGradient>
+    <linearGradient id="flesh" x1="0" y1="0" x2=".2" y2="1">
+      <stop offset="0" stop-color="#ffab7d"/><stop offset=".55" stop-color="#f3814f"/><stop offset="1" stop-color="#dd6239"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="216" r="184" fill="#ffffff" opacity=".45"/>
+  <ellipse cx="300" cy="380" rx="186" ry="22" fill="#0b2b3a" opacity=".10"/>
+
+  <g transform="translate(300 228) rotate(-6)">
+    <ellipse rx="176" ry="134" fill="#a8492a"/>
+    <ellipse cy="-6" rx="176" ry="132" fill="#c96a3d"/>
+    <ellipse cy="-20" rx="166" ry="118" fill="url(#flesh)"/>
+
+    <path d="M-148 44c42 26 98 40 152 40s110-14 148-40" stroke="#ffdcc9" stroke-width="10" fill="none" opacity=".8"/>
+
+    <g stroke="#ffd3bb" fill="none" stroke-linecap="round" opacity=".85">
+      <path d="M-116 -62c52-34 122-42 178-22" stroke-width="9"/>
+      <path d="M-136 4c54-40 130-46 190-22" stroke-width="8"/>
+      <path d="M-122 64c50-26 118-30 168-12" stroke-width="7"/>
+      <path d="M34 -102c26 26 38 66 34 106" stroke-width="6" opacity=".5"/>
+    </g>
+
+    <ellipse cx="8" cy="-22" rx="17" ry="12" fill="#e08a5f" stroke="#ffd7c2" stroke-width="5"/>
+
+    <path d="M-100 -92c32-22 74-30 112-26" stroke="#ffffff" stroke-width="10" fill="none" opacity=".32" stroke-linecap="round"/>
+  </g>
+</svg>
